@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   validation.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gabastos <gabastos@student.42.fr>          +#+  +:+       +#+        */
+/*   By: gabrielsobral <gabrielsobral@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/28 11:55:56 by gabastos          #+#    #+#             */
-/*   Updated: 2025/01/28 15:45:41 by gabastos         ###   ########.fr       */
+/*   Updated: 2025/01/31 12:45:08 by gabrielsobr      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,6 +66,7 @@ static int	is_zero(char **str)
 {
 	int	i;
 
+	i = 0;
 	while (str[i])
 	{
 		if (ft_atoi(str[i]) == 0)

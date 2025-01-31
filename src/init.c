@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   init.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gabastos <gabastos@student.42.fr>          +#+  +:+       +#+        */
+/*   By: gabrielsobral <gabrielsobral@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/28 14:23:01 by gabastos          #+#    #+#             */
-/*   Updated: 2025/01/29 14:01:11 by gabastos         ###   ########.fr       */
+/*   Updated: 2025/01/31 12:24:11 by gabrielsobr      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ static void	set_philo(int argc, char **argv, t_data *data)
 	}
 }
 
-void	philo_stack(int argc, char **argv, t_data *data)
+void	philo_init(int argc, char **argv, t_data *data)
 {
 	long	i;
 

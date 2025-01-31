@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   philo.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gabastos <gabastos@student.42.fr>          +#+  +:+       +#+        */
+/*   By: gabrielsobral <gabrielsobral@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/28 11:56:10 by gabastos          #+#    #+#             */
-/*   Updated: 2025/01/28 15:18:37 by gabastos         ###   ########.fr       */
+/*   Updated: 2025/01/31 12:34:00 by gabrielsobr      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,5 +58,19 @@ typedef struct s_data
 
 long	ft_atoi(char *str);
 int		validation(char **argv);
+void	philo_init(int argc, char **argv, t_data *data);
+void	create(int argc, char **argv);
+void	destroy(t_data *data);
+void	execute(t_data *data);
+void	*rotine(void *arg);
+void	get_forks_and_eat(t_philo *philo);
+void	case_one_philo(t_philo *philo);
+void	die(t_philo *philo);
+void	print_message(char *message, t_philo *philo);
+int		ate_all_meals(t_philo *philo);
+int		died(t_philo *philo);
+int		get_forks(t_philo *philo);
+long	get_time(t_philo *philo);
+int		precise_sleep(t_philo *philo, long time_to_sleep);
 
 #endif
